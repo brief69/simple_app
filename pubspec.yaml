@@ -1,0 +1,41 @@
+name: flutter_firebase_riverpod_mvvm_app
+description: A new Flutter project using Firebase, Riverpod, and MVVM architecture to allow users to post text, save it to Firestore, retrieve and display it, and view their posting history in their profile.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^1.10.0
+  cloud_firestore: ^3.1.5
+  flutter_riverpod: ^1.0.0
+  provider: ^6.0.1
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700

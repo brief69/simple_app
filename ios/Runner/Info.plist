@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Insert your Firebase plist content here, which you get from your Firebase project setup for iOS -->
+    <!-- Example: GoogleService-Info.plist content goes here -->
+    
+    <!-- Permissions for internet access -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    
+    <!-- Description for why the app needs internet access, iOS 14+ might require this -->
+    <key>NSAppTransportSecurity</key>
+    <string>This app requires internet access to function properly.</string>
+    
+    <!-- If your app uses Firebase Authentication and you support sign-in with Apple, you'll need to include the following -->
+    <!-- <key>com.apple.developer.applesignin</key>
+    <array>
+        <string>Default</string>
+    </array> -->
+    
+    <!-- If your app uses Firebase Cloud Messaging, you might need to include permission for push notifications here -->
+    <!-- <key>UIBackgroundModes</key>
+    <array>
+        <string>fetch</string>
+        <string>remote-notification</string>
+    </array> -->
+</dict>
+</plist>
